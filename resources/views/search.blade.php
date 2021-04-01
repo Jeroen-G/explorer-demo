@@ -18,11 +18,17 @@
     </form>
 
     <div>
+        <h2>Results</h2>
         <ul>
             @foreach($people as $person)
                 <li>{{ $person->name }}</li>
             @endforeach
         </ul>
+    </div>
+
+    <div>
+        <h2>Query</h2>
+        <pre>{{ $query ?? 'none' }}</pre>
     </div>
 </body>
 </html>
