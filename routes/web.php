@@ -1,7 +1,6 @@
 <?php
 
 use App\Http\Controllers\SearchController;
-use App\Models\Cartographer;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,5 +15,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::view('/', 'welcome');
-Route::view('search', 'search', ['people' => Cartographer::all()]);
-Route::post('/search', SearchController::class);
+Route::get('/search', [SearchController::class, 'show']);
+Route::post('/search', [SearchController::class, 'search']);

@@ -14,6 +14,13 @@
             <input type="text" name="keywords" autocomplete="off" />
         </label>
 
+        @foreach($countries as $country)
+            <label>
+                <input type="checkbox" name="countries[]" value="{{ $country }}" />
+                {{ $country }}
+            </label>
+        @endforeach
+
         <button type="submit">Search</button>
     </form>
 

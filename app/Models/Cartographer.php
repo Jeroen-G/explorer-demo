@@ -19,7 +19,7 @@ class Cartographer extends Model implements Explored
         return [
             'id' => 'keyword',
             'name' => 'text',
-            'place' => 'text',
+            'place' => 'keyword',
             'lifespan' => 'text',
         ];
     }

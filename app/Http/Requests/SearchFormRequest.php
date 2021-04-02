@@ -24,7 +24,8 @@ class SearchFormRequest extends FormRequest
     public function rules()
     {
         return [
-            'keywords' => 'string',
+            'keywords' => 'nullable|string',
+            'countries' => 'array',
         ];
     }
 }
