@@ -14,7 +14,7 @@ class SearchController extends Controller
 
         return view('search', [
             'people' => $people,
-            'query' => ElasticEngine::dump(),
+            'query' => ElasticEngine::debug()->json(),
         ]);
     }
 }
