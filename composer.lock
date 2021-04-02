@@ -1075,12 +1075,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Jeroen-G/Explorer.git",
-                "reference": "9933e54bc1862657c2e4671d29d51c49c4331c97"
+                "reference": "dedd2c5a6f5d268c8202f44f9d9018e7aae7ddd0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Jeroen-G/Explorer/zipball/9933e54bc1862657c2e4671d29d51c49c4331c97",
-                "reference": "9933e54bc1862657c2e4671d29d51c49c4331c97",
+                "url": "https://api.github.com/repos/Jeroen-G/Explorer/zipball/dedd2c5a6f5d268c8202f44f9d9018e7aae7ddd0",
+                "reference": "dedd2c5a6f5d268c8202f44f9d9018e7aae7ddd0",
                 "shasum": ""
             },
             "require": {
@@ -1136,7 +1136,7 @@
                 "issues": "https://github.com/Jeroen-G/Explorer/issues",
                 "source": "https://github.com/Jeroen-G/Explorer/tree/master"
             },
-            "time": "2021-04-01T09:30:03+00:00"
+            "time": "2021-04-02T07:40:32+00:00"
         },
         {
             "name": "laravel/framework",

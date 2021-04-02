@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\SearchFormRequest;
 use App\Models\Cartographer;
+use JeroenG\Explorer\Infrastructure\Scout\ElasticEngine;
 
 class SearchController extends Controller
 {
@@ -11,6 +12,9 @@ class SearchController extends Controller
     {
         $people = Cartographer::search($request->get('keywords'))->get();
 
-        return view('search', ['people' => $people]);
+        return view('search', [
+            'people' => $people,
+            'query' => ElasticEngine::debug()->json(),
+        ]);
     }
 }
