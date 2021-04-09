@@ -6,6 +6,9 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use JeroenG\Explorer\Application\Explored;
 use JeroenG\Explorer\Application\IndexSettings;
+use JeroenG\Explorer\Domain\Analysis\Analysis;
+use JeroenG\Explorer\Domain\Analysis\Analyzer\StandardAnalyzer;
+use JeroenG\Explorer\Domain\Analysis\Filter\SynonymFilter;
 use Laravel\Scout\Searchable;
 
 class Cartographer extends Model implements Explored, IndexSettings
@@ -30,24 +33,15 @@ class Cartographer extends Model implements Explored, IndexSettings
 
     public function indexSettings(): array
     {
-        return [
-            'analysis' => [
-                'analyzer' => [
-                    'synonym' => [
-                        'tokenizer' => 'standard',
-                        'filter' => ['lowercase', 'synonym'],
-                    ],
-                ],
-                'filter' => [
-                    'synonym' => [
-                        'type' => 'synonym',
-                        'lenient' => true,
-                        'synonyms' => [
-                            'johannes => johan',
-                        ],
-                    ],
-                ],
-            ],
-        ];
+        $synonymFilter = new SynonymFilter();
+        $synonymFilter->setSynonyms(['mona lisa => leonardo']);
+
+        $synonymAnalyzer = new StandardAnalyzer('synonym');
+        $synonymAnalyzer->setFilters(['lowercase', $synonymFilter]);
+
+        return (new Analysis())
+            ->addAnalyzer($synonymAnalyzer)
+            ->addFilter($synonymFilter)
+            ->build();
     }
 }
