@@ -5,7 +5,7 @@
 - Fork or clone the repository
 - `composer install`.
 - The app is prepared to work with Laravel Sail: `vendor/bin/sail up -d`
-- `vendor/bin/sail elastic:create`
+- `vendor/bin/sail artisan elastic:create`
 - `vendor/bin/sail artisan migrate:fresh --seed`
 
 ## Usage
