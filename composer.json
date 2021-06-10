@@ -11,7 +11,7 @@
         "guzzlehttp/guzzle": "^7.0.1",
         "jeroen-g/explorer": "dev-master",
         "laravel/framework": "^8.12",
-        "laravel/scout": "^8.6",
+        "laravel/scout": "^9.1",
         "laravel/tinker": "^2.5"
     },
     "require-dev": {
