@@ -18,6 +18,7 @@ class Cartographer extends Model implements Explored, BePrepared, IndexSettings
     use Searchable;
 
     protected $fillable = ['name', 'place', 'lifespan'];
+    protected $perPage = 5;
 
     public function mappableAs(): array
     {

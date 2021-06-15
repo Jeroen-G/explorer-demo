@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ListController;
 use App\Http\Controllers\SearchController;
 use Illuminate\Support\Facades\Route;
 
@@ -17,3 +18,4 @@ use Illuminate\Support\Facades\Route;
 Route::view('/', 'welcome');
 Route::get('/search', [SearchController::class, 'show']);
 Route::post('/search', [SearchController::class, 'search']);
+Route::get('/list', ListController::class);
