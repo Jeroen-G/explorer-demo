@@ -3,6 +3,7 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Support\Arr;
 
 class SearchFormRequest extends FormRequest
 {
@@ -14,6 +15,13 @@ class SearchFormRequest extends FormRequest
     public function authorize()
     {
         return true;
+    }
+
+    protected function prepareForValidation(): void
+    {
+        $this->merge([
+            'countries' => array_map(fn($country) => mb_strtolower($country), $this->countries),
+        ]);
     }
 
     /**
