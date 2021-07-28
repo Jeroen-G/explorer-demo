@@ -17,7 +17,7 @@ class Cartographer extends Model implements Explored, BePrepared, IndexSettings
     use HasFactory;
     use Searchable;
 
-    protected $fillable = ['name', 'place', 'lifespan'];
+    protected $fillable = ['name', 'place', 'lifespan', 'period_name'];
     protected $perPage = 5;
 
     public function mappableAs(): array
@@ -30,6 +30,20 @@ class Cartographer extends Model implements Explored, BePrepared, IndexSettings
             ],
             'place' => 'keyword',
             'lifespan' => 'text',
+            'period' => 'nested',
+        ];
+    }
+
+    public function toSearchableArray(): array
+    {
+        return [
+            'id' => $this->id,
+            'name' => $this->name,
+            'place' => $this->place,
+            'lifespan' => $this->lifespan,
+            'period' => [
+                'name' => $this->period_name,
+            ],
         ];
     }
 
