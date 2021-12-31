@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ff2428fd08e70dc6d4fbbd6f8e213992",
+    "content-hash": "69e7fdd43269803988bfe0f25f7ee658",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1196,16 +1196,16 @@
         },
         {
             "name": "jeroen-g/explorer",
-            "version": "dev-master",
+            "version": "dev-index-updater",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Jeroen-G/Explorer.git",
-                "reference": "7eb7ecfed8e2a0163669e568091b8dcafca7fcc3"
+                "reference": "bedeeaf5cf748f1b8e00bb80ff702060d5a93ebb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Jeroen-G/Explorer/zipball/7eb7ecfed8e2a0163669e568091b8dcafca7fcc3",
-                "reference": "7eb7ecfed8e2a0163669e568091b8dcafca7fcc3",
+                "url": "https://api.github.com/repos/Jeroen-G/Explorer/zipball/bedeeaf5cf748f1b8e00bb80ff702060d5a93ebb",
+                "reference": "bedeeaf5cf748f1b8e00bb80ff702060d5a93ebb",
                 "shasum": ""
             },
             "require": {
@@ -1222,7 +1222,6 @@
                 "phpunit/phpunit": "~9.0",
                 "symplify/easy-coding-standard": "^9.0"
             },
-            "default-branch": true,
             "type": "library",
             "extra": {
                 "laravel": {
@@ -1259,9 +1258,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Jeroen-G/Explorer/issues",
-                "source": "https://github.com/Jeroen-G/Explorer/tree/master"
+                "source": "https://github.com/Jeroen-G/Explorer/tree/index-updater"
             },
-            "time": "2021-12-31T19:48:53+00:00"
+            "time": "2021-12-31T19:33:16+00:00"
         },
         {
             "name": "laravel/framework",
