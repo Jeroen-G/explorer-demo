@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use JeroenG\Explorer\Application\Aliased;
 use JeroenG\Explorer\Application\Explored;
 use JeroenG\Explorer\Application\IndexSettings;
 use JeroenG\Explorer\Application\BePrepared;
@@ -12,7 +13,7 @@ use JeroenG\Explorer\Domain\Analysis\Analyzer\StandardAnalyzer;
 use JeroenG\Explorer\Domain\Analysis\Filter\SynonymFilter;
 use Laravel\Scout\Searchable;
 
-class Cartographer extends Model implements Explored, BePrepared, IndexSettings
+class Cartographer extends Model implements Explored, BePrepared, IndexSettings, Aliased
 {
     use HasFactory;
     use Searchable;
