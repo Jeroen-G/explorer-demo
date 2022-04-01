@@ -24,6 +24,16 @@
                     @endforeach
                 </fieldset>
 
+                <fieldset class="my-5 flex flex-col">
+                    <div class="flex flex-col text-gray-500">Periods</div>
+                    @foreach($periods as $period)
+                        <label>
+                            <input type="checkbox" name="periods[]" value="{{ $period }}" />
+                            {{ $period }}
+                        </label>
+                    @endforeach
+                </fieldset>
+
                 <fieldset class="my-5">
                     <button class="bg-blue-300 font-medium px-10 py-2 rounded mt-2" type="submit">Search</button>
                 </fieldset>
