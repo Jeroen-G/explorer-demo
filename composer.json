@@ -16,7 +16,7 @@
     "require-dev": {
         "spatie/laravel-ignition": "^1.0",
         "fakerphp/faker": "^1.9.1",
-        "jeroen-g/laravel-packager": "^2.5",
+        "jeroen-g/laravel-packager": "^2.9",
         "laravel/sail": "^1.0.1",
         "mockery/mockery": "^1.4.2",
         "nunomaduro/collision": "^6.1",

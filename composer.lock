@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "813b0098ed29d5da40345d4b64199027",
+    "content-hash": "fcd24876dd01d30279ca02ae8e8e38ea",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1295,12 +1295,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Jeroen-G/Explorer.git",
-                "reference": "edea4fb84aea9b49ea5d67c77d24295d81e9b9b6"
+                "reference": "94cad285f9c241395cfb0d01cfc493901ad72776"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Jeroen-G/Explorer/zipball/edea4fb84aea9b49ea5d67c77d24295d81e9b9b6",
-                "reference": "edea4fb84aea9b49ea5d67c77d24295d81e9b9b6",
+                "url": "https://api.github.com/repos/Jeroen-G/Explorer/zipball/94cad285f9c241395cfb0d01cfc493901ad72776",
+                "reference": "94cad285f9c241395cfb0d01cfc493901ad72776",
                 "shasum": ""
             },
             "require": {
@@ -1313,6 +1313,9 @@
             "require-dev": {
                 "infection/infection": "^0.26",
                 "mockery/mockery": "^1.5",
+                "nunomaduro/larastan": "^2.5",
+                "orchestra/testbench": "*",
+                "phpstan/phpstan-mockery": "^1.1",
                 "phpunit/phpunit": "~9.0",
                 "symplify/easy-coding-standard": "^9.0"
             },
@@ -1355,7 +1358,7 @@
                 "issues": "https://github.com/Jeroen-G/Explorer/issues",
                 "source": "https://github.com/Jeroen-G/Explorer/tree/master"
             },
-            "time": "2023-03-19T14:06:33+00:00"
+            "time": "2023-03-19T15:44:11+00:00"
         },
         {
             "name": "laravel/framework",
@@ -6131,23 +6134,23 @@
         },
         {
             "name": "jeroen-g/laravel-packager",
-            "version": "2.8.0",
+            "version": "2.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Jeroen-G/laravel-packager.git",
-                "reference": "27bddbe896a753ddbb4cf38ae799baa3ba66d3d6"
+                "reference": "4b1a49523b40e349d405dbb9d22b40cb75ffd586"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Jeroen-G/laravel-packager/zipball/27bddbe896a753ddbb4cf38ae799baa3ba66d3d6",
-                "reference": "27bddbe896a753ddbb4cf38ae799baa3ba66d3d6",
+                "url": "https://api.github.com/repos/Jeroen-G/laravel-packager/zipball/4b1a49523b40e349d405dbb9d22b40cb75ffd586",
+                "reference": "4b1a49523b40e349d405dbb9d22b40cb75ffd586",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
                 "ext-zip": "*",
                 "guzzlehttp/guzzle": "~7",
-                "illuminate/support": "^5.0|^6.0|^7.0|^8.0|^9.0",
+                "illuminate/support": "^5.0|^6.0|^7.0|^8.0|^9.0|^10.0",
                 "php": "^7.1|^8.0"
             },
             "require-dev": {
@@ -6191,9 +6194,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Jeroen-G/laravel-packager/issues",
-                "source": "https://github.com/Jeroen-G/laravel-packager/tree/2.8.0"
+                "source": "https://github.com/Jeroen-G/laravel-packager/tree/2.9.0"
             },
-            "time": "2022-02-09T18:40:02+00:00"
+            "time": "2023-02-15T12:00:00+00:00"
         },
         {
             "name": "laravel/sail",
