@@ -10,6 +10,7 @@
         "guzzlehttp/guzzle": "^7.0.1",
         "jeroen-g/explorer": "dev-master",
         "laravel/framework": "^9.0",
+        "laravel/horizon": "^5.17",
         "laravel/scout": "9.*",
         "laravel/tinker": "^2.5"
     },

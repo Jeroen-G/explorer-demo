@@ -1,4 +1,3 @@
-# For more information: https://laravel.com/docs/sail
 version: '3'
 services:
   laravel.test:
@@ -67,6 +66,19 @@ services:
       ELASTICSEARCH_HOSTS: http://es01:9200
     networks:
       - sail
+
+  redis:
+    image: 'redis:alpine'
+    ports:
+      - '${FORWARD_REDIS_PORT:-6379}:6379'
+    volumes:
+      - 'sail-redis:/data'
+    networks:
+      - sail
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      timeout: 5s
+
 networks:
   sail:
     driver: bridge
@@ -74,4 +86,6 @@ volumes:
   sailmysql:
     driver: local
   sailelasticsearch:
+    driver: local
+  sail-redis:
     driver: local
