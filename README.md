@@ -4,8 +4,8 @@
 
 - Fork or clone the repository
 - `composer install`.
-- The app is prepared to work with Laravel Sail: `vendor/bin/sail up -d`
 - `cp .env.example .env`
+- The app is prepared to work with Laravel Sail: `vendor/bin/sail build && vendor/bin/sail up -d`
 - `vendor/bin/sail artisan key:generate`
 - `vendor/bin/sail artisan scout:index cartographers`
 - `vendor/bin/sail artisan migrate:fresh --seed`

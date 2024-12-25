@@ -12,6 +12,10 @@ return [
         'host' => 'es01',
         'port' => '9200',
         'scheme' => 'http',
+        'auth' => [
+            'username' => 'elastic',
+            'password' => env('ELASTIC_PASSWORD'),
+        ]
     ],
 
     /**
