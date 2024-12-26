@@ -16,11 +16,11 @@
     "require-dev": {
         "spatie/laravel-ignition": "^2.0",
         "fakerphp/faker": "^1.9.1",
-        "jeroen-g/laravel-packager": "^2.9",
-        "laravel/sail": "^1.0.1",
+        "jeroen-g/laravel-packager": "^2.10.0",
+        "laravel/sail": "^v1.39.1",
         "mockery/mockery": "^1.4.2",
-        "nunomaduro/collision": "^8.1",
-        "phpunit/phpunit": "^10.0"
+        "nunomaduro/collision": "^v8.5.0",
+        "phpunit/phpunit": "^11.5.0"
     },
     "autoload": {
         "psr-4": {
