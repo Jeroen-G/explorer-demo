@@ -15,6 +15,6 @@
 ## Usage
 The following URLs should work:
 - http://localhost:9000 for the app
-- http://localhost:5601 for Kibana
+- http://localhost:5601 for Kibana (username: elastic, password as set in .env)
 - http://localhost:9200 if you want to access Elasticsearch through its API
 - http://localhost:9000/horizon if you have Laravel Horizon and Redis running
