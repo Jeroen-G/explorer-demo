@@ -7,8 +7,10 @@
     "require": {
         "php": "^8.2",
         "guzzlehttp/guzzle": "^7.0.1",
-        "jeroen-g/explorer": "dev-master",
         "jeroen-g/autowire": "dev-main",
+        "jeroen-g/explorer": "dev-master",
+        "elasticsearch/elasticsearch": "^9.0",
+        "laravel/ai": "^0.4.1",
         "laravel/framework": "^13.0",
         "laravel/horizon": "^5.45",
         "laravel/scout": "^11.0",
@@ -61,5 +63,21 @@
         }
     },
     "minimum-stability": "stable",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "repositories": {
+        "jeroen-g/autowire": {
+            "type": "path",
+            "url": "./packages/JeroenG/Autowire",
+            "options": {
+                "symlink": true
+            }
+        },
+        "jeroen-g/explorer": {
+            "type": "path",
+            "url": "./packages/JeroenG/Explorer",
+            "options": {
+                "symlink": true
+            }
+        }
+    }
 }
